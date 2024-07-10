@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gzhu.dic_platform.mapper.UserDataMapper">
+
+    <resultMap id="BaseResultMap" type="com.gzhu.dic_platform.domain.UserData">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="offsetX" column="offset_x" jdbcType="DOUBLE"/>
+            <result property="offsetY" column="offset_y" jdbcType="DOUBLE"/>
+            <result property="targetSpotNumber" column="target_spot_number" jdbcType="INTEGER"/>
+            <result property="time" column="time" jdbcType="TIMESTAMP"/>
+            <result property="project" column="project" jdbcType="VARCHAR"/>
+            <result property="camera" column="camera" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,offset_x,offset_y,
+        target_spot_number,time,project,
+        camera,create_time
+    </sql>
+</mapper>

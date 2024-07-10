@@ -1,0 +1,29 @@
+# 配置端口号
+server:
+  port: 8080
+
+spring:
+  application:
+    name: dic_platform
+
+  # 配置数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dic?useSSL=false&serverTimezone=Hongkong&characterEncoding=utf-8&autoReconnect=true
+    username: root
+    password: 123456
+
+  # 配置环境（dev 开发环境、prod 生产环境）
+  profiles:
+    active: dev
+
+  devtools:
+    restart:
+      enabled: true
+      exclude: application.yml,static/**,public/**
+
+
+#设置mybatis-plus的日志功能，可以看到mybatis-plus自动生成的sql语句
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
