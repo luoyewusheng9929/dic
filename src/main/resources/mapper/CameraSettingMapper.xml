@@ -2,10 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gzhu.dic_platform.mapper.CameraSettingsMapper">
+<mapper namespace="com.gzhu.dic_platform.mapper.CameraSettingMapper">
 
-    <resultMap id="BaseResultMap" type="com.gzhu.dic_platform.domain.CameraSettings">
-            <id property="id" column="id" jdbcType="INTEGER"/>
+    <resultMap id="BaseResultMap" type="com.gzhu.dic_platform.domain.CameraSetting">
+            <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="focalLength" column="focal_length" jdbcType="INTEGER"/>
             <result property="rollAngle" column="roll_angle" jdbcType="INTEGER"/>
             <result property="horizontalAngle" column="horizontal_angle" jdbcType="INTEGER"/>
@@ -18,7 +18,8 @@
             <result property="uploadInterval" column="upload_interval" jdbcType="INTEGER"/>
             <result property="signalStrength" column="signal_strength" jdbcType="INTEGER"/>
             <result property="signalRatio" column="signal_ratio" jdbcType="INTEGER"/>
-            <result property="updatedAt" column="updated_at" jdbcType="TIMESTAMP"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="Base_Column_List">
@@ -26,6 +27,6 @@
         horizontal_angle,pitch_angle,temperature,
         exposure_time,frame_rate,upper_limit,
         lower_limit,upload_interval,signal_strength,
-        signal_ratio,updated_at
+        signal_ratio,create_time,update_time
     </sql>
 </mapper>

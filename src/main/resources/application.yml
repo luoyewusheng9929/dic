@@ -9,7 +9,7 @@ spring:
   # 配置数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/dic?useSSL=false&serverTimezone=Hongkong&characterEncoding=utf-8&autoReconnect=true
+    url: jdbc:mysql://localhost:3306/dic?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
     username: root
     password: 123456
 
