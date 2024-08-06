@@ -11,7 +11,7 @@ import com.gzhu.dic_platform.dto.CameraSettingDTO;
 */
 public interface CameraSettingService extends IService<CameraSetting> {
 
-    CameraSetting getSettings();
+    CameraSetting getSettings(String deviceNumber);
 
     void updateSettings(CameraSettingDTO settingDTO);
 }

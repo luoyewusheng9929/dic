@@ -1,12 +1,13 @@
 package com.gzhu.dic_platform.domain;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 
@@ -14,11 +15,13 @@ import lombok.Data;
  */
 @TableName(value ="camera_setting")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CameraSetting implements Serializable {
     /**
      * 主键id
      */
-    @TableId
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**
@@ -82,13 +85,25 @@ public class CameraSetting implements Serializable {
     private Integer signalRatio;
 
     /**
+     * 相机
+     */
+    private String camera;
+
+    /**
+     * 所属项目
+     */
+    private String project;
+
+    /**
      * 创建时间
      */
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
     /**
      * 更新时间
      */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     @TableField(exist = false)

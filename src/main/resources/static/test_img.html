@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+<!-- Vue 挂载点 -->
+<div id="app">
+    <el-form :model="form" ref="form" label-width="120px">
+        <el-form-item>
+            <template #label>
+                <span style="color: red;">*</span> 设备编号
+            </template>
+            <el-input v-model="form.deviceNumber"></el-input>
+        </el-form-item>
+        <el-form-item label="设备名称">
+            <el-input v-model="form.deviceName"></el-input>
+        </el-form-item>
+        <el-form-item label="安装地址">
+            <el-input v-model="form.installAddress"></el-input>
+        </el-form-item>
+        <el-form-item label="安装时间">
+            <el-date-picker
+                    v-model="form.installTime"
+                    type="datetime"
+                    placeholder="选择安装时间"
+                    format="yyyy-MM-dd HH:mm:ss"
+                    value-format="yyyy-MM-dd HH:mm:ss"
+                    :picker-options="datePickerOptions"
+            ></el-date-picker>
+        </el-form-item>
+        <el-form-item label="上传图片">
+            <el-upload
+                    class="upload-demo"
+                    action=""
+                    :auto-upload="false"
+                    list-type="picture"
+                    :on-change="handleFileChange"
+                    :on-remove="handleRemove"
+                    :file-list="fileList"
+                    accept="image/jpeg, image/png"
+            >
+                <el-button size="small" type="primary">选择文件</el-button>
+                <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过5MB</div>
+            </el-upload>
+        </el-form-item>
+        <el-form-item>
+            <el-button type="primary" @click="submitForm">提交</el-button>
+        </el-form-item>
+    </el-form>
+</div>
+
+<!-- 引入 Vue 和 Element UI -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    // Vue 实例化
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                form: {
+                    deviceNumber: '',
+                    deviceName: '',
+                    installAddress: '',
+                    installTime: '', // 添加安装时间字段
+                },
+                fileList: [], // 用于存储上传的文件列表
+                fileUrl: '', // 文件的预览URL
+                fileName: '', // 文件名
+                uploadHeaders: {
+                    // 设置请求头，例如 Authorization
+                    Authorization: '',
+                },
+                datePickerOptions: {
+                    // 日期选择器的配置选项，可以自定义选项
+                }
+            };
+        },
+        methods: {
+            handleFileChange(file, fileList) {
+                // 检查文件格式和大小
+                const isJPG = file.raw.type === 'image/jpeg' || file.raw.type === 'image/png';
+                const isLt2M = file.raw.size / 1024 / 1024 < 5;
+
+                if (!isJPG) {
+                    this.$message.error('上传图片只能是 JPG/PNG 格式!');
+                    return false;
+                }
+                if (!isLt2M) {
+                    this.$message.error('上传图片大小不能超过 5MB!');
+                    return false;
+                }
+
+                this.fileList = fileList;
+                this.fileName = file.name;
+                this.fileUrl = URL.createObjectURL(file.raw); // 创建图片预览
+                return true;
+            },
+            handleRemove(file, fileList) {
+                this.fileList = fileList;
+                this.fileUrl = '';
+                this.fileName = '';
+            },
+            removeFile() {
+                this.fileList = [];
+                this.fileUrl = '';
+                this.fileName = '';
+            },
+            submitForm() {
+                this.$refs.form.validate(valid => {
+                    if (valid) {
+                        const formData = new FormData();
+                        // 添加表单数据
+                        formData.append('deviceNumber', this.form.deviceNumber);
+                        formData.append('deviceName', this.form.deviceName);
+                        formData.append('installAddress', this.form.installAddress);
+                        formData.append('installTime', this.form.installTime);
+
+                        // 添加文件
+                        if (this.fileList.length > 0) {
+                            formData.append('uploadImg', this.fileList[0].raw); // 使用 `raw` 来获取单个文件对象
+                        }
+
+                        // 发送请求
+                        fetch('http://localhost:8080/api/info/update', {
+                            method: 'PUT', // 使用 PUT 方法
+                            headers: this.uploadHeaders,
+                            body: formData
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                                console.log(data);
+                                this.$message.success('提交成功！');
+                            })
+                            .catch(error => {
+                                console.error(error);
+                                this.$message.error('提交失败！');
+                            });
+                    } else {
+                        this.$message.error('表单验证失败！');
+                    }
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>

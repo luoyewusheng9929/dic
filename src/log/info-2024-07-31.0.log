@@ -1,0 +1,525 @@
+2024-07-31 00:36:12.657 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-07-31 00:36:12.662 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-07-31 17:12:37.110 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7852 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 17:12:37.117 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 17:12:37.167 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-31 17:12:37.168 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-31 17:12:38.447 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 17:12:38.457 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 17:12:38.459 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 17:12:38.459 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 17:12:38.525 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 17:12:38.525 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1357 ms
+2024-07-31 17:12:39.452 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 17:12:39.476 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 17:12:39.489 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 17:12:39.496 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 2.965 seconds (process running for 3.873)
+2024-07-31 17:14:31.485 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31 17:14:31.485 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-31 17:14:31.489 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-31 17:14:31.700 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-31 17:14:31.929 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@793ca110
+2024-07-31 17:14:31.931 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-31 20:28:03.817 [http-nio-8080-exec-8] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 906 ms
+2024-07-31 22:46:14.810 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-31 22:46:14.812 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-31 22:46:18.023 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 25380 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 22:46:18.025 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 22:46:18.064 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-31 22:46:18.065 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-31 22:46:19.074 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 22:46:19.084 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:46:19.086 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 22:46:19.086 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 22:46:19.154 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 22:46:19.154 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1089 ms
+2024-07-31 22:46:20.164 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 22:46:20.184 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:46:20.196 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 22:46:20.204 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 2.665 seconds (process running for 3.48)
+2024-07-31 22:46:24.167 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31 22:46:24.168 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-31 22:46:24.168 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-07-31 22:49:20.063 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 8636 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 22:49:20.066 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 22:49:20.108 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-31 22:49:20.109 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-31 22:49:21.225 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 22:49:21.232 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:49:21.234 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 22:49:21.234 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 22:49:21.306 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 22:49:21.307 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1198 ms
+2024-07-31 22:49:22.314 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 22:49:22.333 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:49:22.347 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 22:49:22.356 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 2.777 seconds (process running for 3.548)
+2024-07-31 22:49:24.997 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31 22:49:24.998 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-31 22:49:24.998 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-07-31 22:52:22.032 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 22:52:22.034 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 22:52:22.080 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-31 22:52:22.080 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-31 22:52:23.289 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 22:52:23.299 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:52:23.302 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 22:52:23.302 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 22:52:23.390 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 22:52:23.391 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1310 ms
+2024-07-31 22:52:24.765 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 22:52:24.792 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:52:24.809 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 22:52:24.821 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 3.37 seconds (process running for 4.289)
+2024-07-31 22:52:27.218 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31 22:52:27.219 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-31 22:52:27.220 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-31 22:56:24.038 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 22:56:24.041 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:56:24.141 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 22:56:24.142 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 22:56:24.457 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 22:56:24.459 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:56:24.459 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 22:56:24.460 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 22:56:24.493 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 22:56:24.493 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 349 ms
+2024-07-31 22:56:24.508 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-31 22:56:24.516 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-31 22:56:26.009 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 22:56:26.012 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 22:56:26.217 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 22:56:26.219 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:56:26.219 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 22:56:26.219 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 22:56:26.256 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 22:56:26.256 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 243 ms
+2024-07-31 22:56:26.621 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 22:56:26.632 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:56:26.634 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 22:56:26.637 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.662 seconds (process running for 246.106)
+2024-07-31 22:56:26.638 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 22:57:36.065 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 22:57:36.066 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:57:36.156 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 22:57:36.157 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 22:57:36.413 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 22:57:36.414 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:57:36.414 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 22:57:36.414 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 22:57:36.449 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 22:57:36.449 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 289 ms
+2024-07-31 22:57:36.459 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-31 22:57:36.464 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-31 22:57:37.945 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 22:57:37.945 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 22:57:38.243 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 22:57:38.244 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:57:38.244 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 22:57:38.245 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 22:57:38.291 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 22:57:38.291 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 345 ms
+2024-07-31 22:57:38.653 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 22:57:38.666 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:57:38.669 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 22:57:38.673 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.772 seconds (process running for 318.141)
+2024-07-31 22:57:38.674 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 22:59:01.376 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 22:59:01.378 [Thread-14] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:59:01.461 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 22:59:01.462 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 22:59:01.689 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 22:59:01.690 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:59:01.690 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 22:59:01.690 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 22:59:01.722 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 22:59:01.722 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 259 ms
+2024-07-31 22:59:02.012 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 22:59:02.026 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 22:59:02.029 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 22:59:02.032 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.6 seconds (process running for 401.5)
+2024-07-31 22:59:02.033 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:04:40.989 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 35 class path changes (0 additions, 35 deletions, 0 modifications)
+2024-07-31 23:04:40.992 [Thread-21] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:04:41.125 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:04:41.126 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:04:41.498 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:04:41.499 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:04:41.500 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:04:41.500 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:04:41.542 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:04:41.543 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 414 ms
+2024-07-31 23:04:41.777 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-31 23:04:41.781 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-31 23:04:45.243 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:04:45.244 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:04:45.459 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:04:45.460 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:04:45.460 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:04:45.460 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:04:45.497 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:04:45.497 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 252 ms
+2024-07-31 23:04:45.625 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-31 23:04:45.630 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-31 23:04:56.185 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:04:56.185 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:04:56.365 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:04:56.366 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:04:56.366 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:04:56.366 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:04:56.404 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:04:56.404 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 217 ms
+2024-07-31 23:04:56.498 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-31 23:04:56.502 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-31 23:04:58.957 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:04:58.958 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:04:59.148 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:04:59.149 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:04:59.149 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:04:59.149 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:04:59.183 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:04:59.183 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 224 ms
+2024-07-31 23:04:59.293 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-31 23:04:59.297 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-31 23:06:24.859 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:06:24.860 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:06:25.146 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:06:25.146 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:06:25.147 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:06:25.147 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:06:25.217 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:06:25.217 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 353 ms
+2024-07-31 23:06:25.319 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-31 23:06:25.325 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-31 23:06:28.641 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:06:28.642 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:06:29.053 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:06:29.054 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:06:29.054 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:06:29.054 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:06:29.136 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:06:29.136 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 492 ms
+2024-07-31 23:06:29.542 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:06:29.553 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:06:29.556 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:06:29.559 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.964 seconds (process running for 849.027)
+2024-07-31 23:06:29.560 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:07:13.681 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 23:07:13.682 [Thread-25] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:07:13.771 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:07:13.771 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:07:14.037 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:07:14.039 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:07:14.039 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:07:14.039 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:07:14.079 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:07:14.079 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 305 ms
+2024-07-31 23:07:14.408 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:07:14.418 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:07:14.421 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:07:14.425 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.686 seconds (process running for 893.893)
+2024-07-31 23:07:14.425 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:08:30.110 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-31 23:08:30.111 [Thread-44] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:08:30.199 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:08:30.199 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:08:30.489 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:08:30.490 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:08:30.490 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:08:30.490 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:08:30.525 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:08:30.525 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 324 ms
+2024-07-31 23:08:30.801 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:08:30.811 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:08:30.813 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:08:30.817 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.646 seconds (process running for 970.286)
+2024-07-31 23:08:30.818 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:09:24.304 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 36 class path changes (0 additions, 36 deletions, 0 modifications)
+2024-07-31 23:09:24.305 [Thread-48] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:09:24.393 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:09:24.394 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:09:24.777 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-31 23:09:28.243 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:09:28.244 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:09:28.453 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:09:28.454 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:09:28.454 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:09:28.454 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:09:28.512 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:09:28.512 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 267 ms
+2024-07-31 23:09:28.857 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:09:28.866 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:09:28.869 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:09:28.875 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.651 seconds (process running for 1028.343)
+2024-07-31 23:09:28.876 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:10:17.025 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 23:10:17.027 [Thread-52] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:10:17.122 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:10:17.122 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:10:17.411 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:10:17.411 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:10:17.412 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:10:17.412 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:10:17.442 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:10:17.443 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 319 ms
+2024-07-31 23:10:17.758 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:10:17.773 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:10:17.776 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:10:17.778 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.688 seconds (process running for 1077.247)
+2024-07-31 23:10:17.780 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:10:19.232 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-31 23:10:19.234 [Thread-59] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:10:19.324 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:10:19.325 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:10:19.589 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:10:19.589 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:10:19.590 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:10:19.590 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:10:19.626 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:10:19.626 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 299 ms
+2024-07-31 23:10:19.894 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:10:19.908 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:10:19.910 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:10:19.913 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.619 seconds (process running for 1079.381)
+2024-07-31 23:10:19.914 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:11:25.470 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 23:11:25.471 [Thread-63] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:11:25.554 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:11:25.554 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:11:25.753 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:11:25.754 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:11:25.754 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:11:25.754 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:11:25.785 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:11:25.786 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 230 ms
+2024-07-31 23:11:26.013 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:11:26.024 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:11:26.027 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:11:26.029 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.501 seconds (process running for 1145.498)
+2024-07-31 23:11:26.030 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:23:29.436 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-31 23:23:29.437 [Thread-67] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:23:29.531 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:23:29.531 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:23:29.801 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:23:29.802 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:23:29.803 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:23:29.803 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:23:29.833 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:23:29.833 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 300 ms
+2024-07-31 23:23:30.112 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:23:30.122 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:23:30.124 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:23:30.127 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.632 seconds (process running for 1869.596)
+2024-07-31 23:23:30.128 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:26:53.402 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 23:26:53.403 [Thread-71] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:26:53.492 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:26:53.493 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:26:53.792 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:26:53.794 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:26:53.794 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:26:53.794 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:26:53.835 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:26:53.835 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 341 ms
+2024-07-31 23:26:54.216 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:26:54.228 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:26:54.231 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:26:54.234 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.774 seconds (process running for 2073.702)
+2024-07-31 23:26:54.235 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:26:55.642 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-31 23:26:55.643 [Thread-75] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:26:55.719 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:26:55.720 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:26:55.927 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:26:55.929 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:26:55.929 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:26:55.929 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:26:55.964 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:26:55.964 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 243 ms
+2024-07-31 23:26:56.193 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:26:56.202 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:26:56.204 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:26:56.207 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.509 seconds (process running for 2075.675)
+2024-07-31 23:26:56.208 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:29:03.082 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-07-31 23:29:03.084 [Thread-79] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:03.180 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:29:03.180 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:29:03.429 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:29:03.431 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:03.431 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:29:03.432 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:29:03.476 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:29:03.476 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 294 ms
+2024-07-31 23:29:03.854 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:29:03.868 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:03.872 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:29:03.875 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.734 seconds (process running for 2203.344)
+2024-07-31 23:29:03.876 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:29:05.280 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2024-07-31 23:29:05.281 [Thread-83] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:05.359 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:29:05.359 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:29:05.583 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:29:05.584 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:05.584 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:29:05.584 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:29:05.616 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:29:05.617 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 257 ms
+2024-07-31 23:29:05.862 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:29:05.871 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:05.873 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:29:05.876 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.541 seconds (process running for 2205.345)
+2024-07-31 23:29:05.877 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:29:13.420 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 23:29:13.421 [Thread-87] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:13.509 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:29:13.510 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:29:13.776 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:29:13.776 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:13.776 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:29:13.777 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:29:13.816 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:29:13.816 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 305 ms
+2024-07-31 23:29:14.116 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:29:14.125 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:14.127 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:29:14.130 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.645 seconds (process running for 2213.598)
+2024-07-31 23:29:14.131 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:29:15.540 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-31 23:29:15.540 [Thread-91] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:15.632 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 7520 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:29:15.632 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:29:15.860 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:29:15.861 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:15.861 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:29:15.861 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:29:15.893 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:29:15.893 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 259 ms
+2024-07-31 23:29:16.150 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:29:16.165 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:29:16.168 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:29:16.170 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.567 seconds (process running for 2215.639)
+2024-07-31 23:29:16.171 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:35:29.259 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 14572 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:35:29.261 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:35:29.306 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-31 23:35:29.307 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-31 23:35:30.489 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:35:30.499 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:35:30.501 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:35:30.501 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:35:30.570 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:35:30.570 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1263 ms
+2024-07-31 23:35:31.858 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:35:31.880 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:35:31.899 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:35:31.908 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 3.182 seconds (process running for 4.417)
+2024-07-31 23:40:44.637 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31 23:40:44.637 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-31 23:40:44.638 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-31 23:48:06.564 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-31 23:48:06.699 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74fdfe04
+2024-07-31 23:48:06.702 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-31 23:49:17.554 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 23:49:17.559 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:49:17.579 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-31 23:49:17.590 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-31 23:49:17.735 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 14572 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:49:17.736 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:49:18.210 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:49:18.212 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:49:18.212 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:49:18.212 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:49:18.264 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:49:18.264 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 525 ms
+2024-07-31 23:49:18.843 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:49:18.859 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:49:18.862 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:49:18.866 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 1.196 seconds (process running for 831.375)
+2024-07-31 23:49:18.870 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:49:20.272 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-31 23:49:20.273 [Thread-8] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:49:20.385 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 14572 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:49:20.385 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:49:20.711 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:49:20.711 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:49:20.712 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:49:20.712 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:49:20.746 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:49:20.746 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 358 ms
+2024-07-31 23:49:21.074 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:49:21.088 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:49:21.093 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:49:21.096 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.753 seconds (process running for 833.605)
+2024-07-31 23:49:21.097 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:49:49.376 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 3924 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:49:49.379 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:49:49.424 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-31 23:49:49.424 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-31 23:49:50.657 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:49:50.665 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:49:50.667 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:49:50.667 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:49:50.733 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:49:50.733 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1308 ms
+2024-07-31 23:49:51.695 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:49:51.715 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:49:51.729 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:49:51.737 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 2.917 seconds (process running for 3.871)
+2024-07-31 23:50:04.179 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31 23:50:04.180 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-31 23:50:04.181 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-31 23:53:26.795 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-31 23:53:26.801 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:53:26.927 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 3924 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:53:26.928 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:53:27.285 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:53:27.286 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:53:27.286 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:53:27.287 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:53:27.337 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:53:27.338 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 408 ms
+2024-07-31 23:53:27.827 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:53:27.840 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:53:27.843 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:53:27.846 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.969 seconds (process running for 219.98)
+2024-07-31 23:53:27.848 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:53:29.255 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-31 23:53:29.256 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:53:29.349 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Starting DicPlatformApplication using Java 22.0.1 with PID 3924 (D:\project\idea\DIC\dic_platform\target\classes started by 23617 in D:\project\idea\DIC\dic_platform)
+2024-07-31 23:53:29.350 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - The following 1 profile is active: "dev"
+2024-07-31 23:53:29.644 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-07-31 23:53:29.645 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:53:29.646 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-31 23:53:29.646 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-31 23:53:29.679 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-31 23:53:29.679 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 327 ms
+2024-07-31 23:53:29.994 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-31 23:53:30.005 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-31 23:53:30.010 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-07-31 23:53:30.013 [restartedMain] INFO  com.gzhu.dic_platform.DicPlatformApplication - Started DicPlatformApplication in 0.701 seconds (process running for 222.147)
+2024-07-31 23:53:30.014 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-07-31 23:55:43.454 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31 23:55:43.455 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-31 23:55:43.457 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-31 23:55:43.578 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-31 23:55:43.701 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f605120
+2024-07-31 23:55:43.703 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

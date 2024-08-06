@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gzhu.dic_platform.mapper.CameraInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.gzhu.dic_platform.domain.CameraInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="deviceNumber" column="device_number" jdbcType="VARCHAR"/>
+            <result property="deviceName" column="device_name" jdbcType="VARCHAR"/>
+            <result property="installAddress" column="install_address" jdbcType="VARCHAR"/>
+            <result property="longitude" column="longitude" jdbcType="VARCHAR"/>
+            <result property="latitude" column="latitude" jdbcType="VARCHAR"/>
+            <result property="online" column="online" jdbcType="TINYINT"/>
+            <result property="lastTime" column="last_time" jdbcType="TIMESTAMP"/>
+            <result property="installTime" column="install_time" jdbcType="TIMESTAMP"/>
+            <result property="rrWidth" column="rr_width" jdbcType="INTEGER"/>
+            <result property="rrHeight" column="rr_height" jdbcType="DOUBLE"/>
+            <result property="installImg" column="install_img" jdbcType="VARCHAR"/>
+            <result property="baseImg" column="base_img" jdbcType="VARCHAR"/>
+            <result property="lastImg" column="last_img" jdbcType="VARCHAR"/>
+            <result property="project" column="project" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,device_number,device_name,
+        install_address,longitude,latitude,
+        online,last_time,install_time,
+        rr_width,rr_height,install_img,
+        base_img,last_img,project,
+        create_time,update_time,is_deleted
+    </sql>
+    <update id="updateByDeviceNumber">
+        UPDATE camera_info
+        SET is_deleted = #{isDeleted}
+        WHERE device_number = #{deviceNumber}
+    </update>
+</mapper>

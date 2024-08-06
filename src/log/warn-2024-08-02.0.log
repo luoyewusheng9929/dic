@@ -1,0 +1,1 @@
+2024-08-02 00:56:59.762 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/4f8df5045518a6d1/null.]

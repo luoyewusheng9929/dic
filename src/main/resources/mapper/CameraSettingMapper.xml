@@ -18,6 +18,8 @@
             <result property="uploadInterval" column="upload_interval" jdbcType="INTEGER"/>
             <result property="signalStrength" column="signal_strength" jdbcType="INTEGER"/>
             <result property="signalRatio" column="signal_ratio" jdbcType="INTEGER"/>
+            <result property="camera" column="camera" jdbcType="VARCHAR"/>
+            <result property="project" column="project" jdbcType="VARCHAR"/>
             <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
     </resultMap>
@@ -27,6 +29,7 @@
         horizontal_angle,pitch_angle,temperature,
         exposure_time,frame_rate,upper_limit,
         lower_limit,upload_interval,signal_strength,
-        signal_ratio,create_time,update_time
+        signal_ratio,camera,project,
+        create_time,update_time
     </sql>
 </mapper>

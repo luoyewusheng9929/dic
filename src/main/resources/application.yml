@@ -1,3 +1,5 @@
+#swagger-ui界面  http://localhost:8080/swagger-ui/index.html
+
 # 配置端口号
 server:
   port: 8080
@@ -21,6 +23,25 @@ spring:
     restart:
       enabled: true
       exclude: application.yml,static/**,public/**
+
+  resources:
+    cache:
+      cachecontrol:
+        public: true
+  web:
+    resources:
+      cache:
+        cachecontrol:
+          max-age: 25920
+      chain:
+        strategy:
+          fixed:
+            enabled: true
+            version: 1.0.0
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
 
 
 #设置mybatis-plus的日志功能，可以看到mybatis-plus自动生成的sql语句

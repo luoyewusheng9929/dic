@@ -2,12 +2,17 @@ package com.gzhu.dic_platform.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.gzhu.dic_platform.common.exception.GlobalException;
+import com.gzhu.dic_platform.common.utils.BeanCopyUtils;
 import com.gzhu.dic_platform.domain.CameraSetting;
 import com.gzhu.dic_platform.dto.CameraSettingDTO;
 import com.gzhu.dic_platform.mapper.CameraSettingMapper;
+import com.gzhu.dic_platform.service.CameraInfoService;
 import com.gzhu.dic_platform.service.CameraSettingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
 
 /**
 * @author 23617
@@ -20,31 +25,25 @@ public class CameraSettingServiceImpl extends ServiceImpl<CameraSettingMapper, C
 
     @Autowired
     private CameraSettingMapper cameraSettingMapper;
+
     @Override
-    public CameraSetting getSettings() {
-        return cameraSettingMapper.selectById(1L);
+    public CameraSetting getSettings(String deviceNumber) {
+        LambdaQueryWrapper<CameraSetting> queryWrapper = new LambdaQueryWrapper();
+        queryWrapper.eq(CameraSetting::getCamera, deviceNumber);
+        return cameraSettingMapper.selectOne(queryWrapper);
     }
 
     public void updateSettings(CameraSettingDTO settingsDTO) {
-        LambdaQueryWrapper<CameraSetting> queryWrapper = new LambdaQueryWrapper<CameraSetting>();
-        queryWrapper.eq(CameraSetting::getId, 1L);
-        CameraSetting currentSettings = getOne(queryWrapper);
-        if(currentSettings == null)
-            throw new RuntimeException("Settings not found");
+        LambdaQueryWrapper<CameraSetting> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(CameraSetting::getCamera, settingsDTO.getCamera());
+        CameraSetting result = cameraSettingMapper.selectOne(queryWrapper);
+        if(result == null) {
+            throw new GlobalException("设备编号不存在");
+        }
 
-        currentSettings.setFocalLength(settingsDTO.getFocalLength());
-        currentSettings.setRollAngle(settingsDTO.getRollAngle());
-        currentSettings.setHorizontalAngle(settingsDTO.getHorizontalAngle());
-        currentSettings.setPitchAngle(settingsDTO.getPitchAngle());
-        currentSettings.setTemperature(settingsDTO.getTemperature());
-        currentSettings.setExposureTime(settingsDTO.getExposureTime());
-        currentSettings.setFrameRate(settingsDTO.getFrameRate());
-        currentSettings.setUpperLimit(settingsDTO.getUpperLimit());
-        currentSettings.setLowerLimit(settingsDTO.getLowerLimit());
-        currentSettings.setUploadInterval(settingsDTO.getUploadInterval());
-        currentSettings.setSignalStrength(settingsDTO.getSignalStrength());
-        currentSettings.setSignalRatio(settingsDTO.getSignalRatio());
-        updateById(currentSettings);
+        CameraSetting cameraSetting = BeanCopyUtils.copyBean(settingsDTO, CameraSetting.class);
+        cameraSetting.setId(result.getId());
+        cameraSettingMapper.updateById(cameraSetting);
     }
 }
 

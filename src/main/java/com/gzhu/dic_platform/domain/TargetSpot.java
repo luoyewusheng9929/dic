@@ -5,7 +5,9 @@ import com.baomidou.mybatisplus.annotation.*;
 import java.io.Serializable;
 import java.util.Date;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 
@@ -13,6 +15,8 @@ import lombok.Data;
  */
 @TableName(value ="target_spot")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class TargetSpot implements Serializable {
     /**
      * 主键id
@@ -56,6 +60,11 @@ public class TargetSpot implements Serializable {
     private Integer height;
 
     /**
+     * 是否为基准点
+     */
+    private Integer isBasepoint;
+
+    /**
      * 所属相机
      */
     private String camera;
@@ -68,17 +77,18 @@ public class TargetSpot implements Serializable {
     /**
      * 创建时间
      */
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
     /**
      * 更新时间
      */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     /**
      * 逻辑删除
      */
-    @TableLogic
     private Integer isDeleted;
 
     @TableField(exist = false)

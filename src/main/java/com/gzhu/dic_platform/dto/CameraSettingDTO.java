@@ -63,4 +63,9 @@ public class CameraSettingDTO {
      * 信噪比
      */
     private Integer signalRatio;
+
+    /**
+     * 相机
+     */
+    private String camera;
 }

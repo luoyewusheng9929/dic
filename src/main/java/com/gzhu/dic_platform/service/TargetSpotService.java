@@ -3,6 +3,10 @@ package com.gzhu.dic_platform.service;
 import com.gzhu.dic_platform.domain.TargetSpot;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.gzhu.dic_platform.dto.TargetSpotDTO;
+import com.gzhu.dic_platform.vo.TargetSpotVO;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
 * @author 23617
@@ -13,5 +17,9 @@ public interface TargetSpotService extends IService<TargetSpot> {
 
     void addTargetSpot(TargetSpotDTO targetSpotDTO);
 
-    int getTargetSpotNums();
+    int getTargetSpotNums(String deviceNumber);
+
+    ArrayList<TargetSpotVO> getTargetSpotByCameraId(String deviceNumber);
+
+    boolean updateSpots(List<TargetSpotDTO> spots);
 }

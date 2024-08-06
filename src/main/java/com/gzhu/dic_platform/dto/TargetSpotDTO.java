@@ -5,6 +5,11 @@ import lombok.Data;
 @Data
 public class TargetSpotDTO {
     /**
+     * 主键id
+     */
+    private Long id;
+
+    /**
      * 靶点序号
      */
     private Integer spotNumber;
@@ -38,6 +43,11 @@ public class TargetSpotDTO {
      * 靶框高度
      */
     private Integer height;
+
+    /**
+     * 是否为基准点
+     */
+    private Integer isBasepoint;
 
     /**
      * 所属相机

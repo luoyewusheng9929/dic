@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高德地图示例</title>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=a2df9aad9df90aa6defccaf680b88e7c"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        #map-container {
+            width: 900px;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+<h1>高德地图集成示例</h1>
+<div id="app">
+    <div id="map-container"></div>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            map: null
+        },
+        mounted() {
+            this.initMap();
+        },
+        methods: {
+            initMap() {
+                // 初始化地图
+                this.map = new AMap.Map('map-container', {
+                    resizeEnable: true,
+                    zoom: 4,
+                    center: [105.397428, 39.90923]
+                });
+                // 加载标记数据
+                this.loadMarkerData();
+            },
+            loadMarkerData() {
+                axios.get('http://localhost:8080/api/info/all/1/10')
+                    .then(response => {
+                        response.data.data.records.forEach(item => {
+                            let longitude = parseFloat(item.longitude);
+                            let latitude = parseFloat(item.latitude);
+                            let marker = new AMap.Marker({
+                                position: new AMap.LngLat(longitude, latitude)
+                            });
+                            this.map.add(marker);
+                        });
+                    })
+                    .catch(error => {
+                        console.error('加载标记数据失败:', error);
+                    });
+            }
+        }
+    });
+</script>
+</body>
+</html>
