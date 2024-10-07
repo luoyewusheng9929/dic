@@ -66,9 +66,9 @@ public class RecordController {
             @RequestParam(name = "deviceNumber", required = false) String deviceNumber,
             @RequestParam(name = "startTime", required = false) String startTime,
             @RequestParam(name = "endTime", required = false) String endTime,
-//            @RequestParam(name = "samplingDuration", required = false, defaultValue = "1") int samplingDuration,
+//            @RequestParam(name = "samplingDuration", required = false, defaultValue = "100") int samplingDuration,
 //            @RequestParam(name = "samplingMethod", required = false, defaultValue = "mean") String samplingMethod,
-            @RequestParam(name = "limit", required = false, defaultValue = "1000") int limit) {
+            @RequestParam(name = "limit", required = false, defaultValue = "600") int limit) {
 
         List<Map<String, Object>> result = new ArrayList<>();
         StringBuilder queryBuilder = new StringBuilder();
@@ -76,7 +76,7 @@ public class RecordController {
 
         // 计算当前时间的前一天
         Instant now = Instant.now();
-        String defaultStartTime = now.minus(1, ChronoUnit.DAYS).toString(); // 当前时间的前一天
+        String defaultStartTime = now.minus(60, ChronoUnit.MINUTES).toString(); // 当前时间的前一天
         String defaultEndTime = now.toString(); // 当前时间
 
         // 基础查询语句
@@ -94,9 +94,9 @@ public class RecordController {
             queryBuilder.append(String.format("|> filter(fn: (r) => r.dn == \"%s\") ", deviceNumber));
         }
 
-        // 采样和限制
-//        queryBuilder.append(String.format("|> aggregateWindow(every: %ds, fn: %s) |> limit(n: %d)",
-//                samplingDuration, samplingMethod.toLowerCase(), limit));
+        // 采样
+//        queryBuilder.append(String.format("|> aggregateWindow(every: %dms, fn: %s)",
+//                samplingDuration, samplingMethod.toLowerCase()));
         // 限制
         queryBuilder.append(String.format("|> limit(n: %d)", limit));
 

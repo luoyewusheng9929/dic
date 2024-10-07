@@ -11,9 +11,9 @@ spring:
   # 配置数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/dic?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
+    url: jdbc:mysql://${dic.mysqldb.host}:3306/dic?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
     username: root
-    password: 123456
+    password: ${dic.mysqldb.password}
 
   # 配置环境（dev 开发环境、prod 生产环境）
   profiles:

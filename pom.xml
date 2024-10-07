@@ -118,6 +118,14 @@
             <artifactId>influxdb-client-java</artifactId>
             <version>7.1.0</version>
         </dependency>
+
+        <!-- mqtt -->
+        <dependency>
+            <groupId>org.eclipse.paho</groupId>
+            <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
     </dependencies>
 
     <build>
