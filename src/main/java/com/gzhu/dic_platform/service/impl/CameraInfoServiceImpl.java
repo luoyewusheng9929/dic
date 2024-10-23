@@ -2,7 +2,6 @@ package com.gzhu.dic_platform.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -13,11 +12,15 @@ import com.gzhu.dic_platform.domain.CameraInfo;
 import com.gzhu.dic_platform.dto.CameraInfoDTO;
 import com.gzhu.dic_platform.service.CameraInfoService;
 import com.gzhu.dic_platform.mapper.CameraInfoMapper;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.boot.system.ApplicationHome;
+import java.io.File;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
 * @author 23617
@@ -34,7 +37,7 @@ public class CameraInfoServiceImpl extends ServiceImpl<CameraInfoMapper, CameraI
     @Override
     public CameraInfo getInfoByDeviceNumber(String deviceNumber) {
         LambdaQueryWrapper<CameraInfo> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(CameraInfo::getDeviceNumber, deviceNumber);
+        queryWrapper.like(CameraInfo::getDeviceNumber, deviceNumber);
         return getOne(queryWrapper);
     }
 
@@ -61,11 +64,45 @@ public class CameraInfoServiceImpl extends ServiceImpl<CameraInfoMapper, CameraI
         return save(cameraInfo);
     }
 
+    /**
+     * 根据设备编号更新设备名称，安装地址，安装时间，上次或更新安装图片
+     * @param cameraInfoDTO
+     * @return
+     */
     @Override
     public boolean updateInfo(CameraInfoDTO cameraInfoDTO) {
+        // 根据设备编号获取旧的图片名
+        String dn = cameraInfoDTO.getDeviceNumber();
+        if (!StringUtils.isEmpty(dn)) {
+            // 查询旧的 CameraInfo 对象，获取旧的图片名
+            CameraInfo oldCameraInfo = cameraInfoMapper.selectOne(
+                    new LambdaQueryWrapper<CameraInfo>().eq(CameraInfo::getDeviceNumber, dn)
+            );
+            String oldInstallImg = oldCameraInfo.getInstallImg();
+
+            // 如果存在旧图片，则执行删除操作
+            if (!StringUtils.isEmpty(oldInstallImg)) {
+                // 获取旧图片的完整路径
+                ApplicationHome applicationHome = new ApplicationHome(UploadImgUtil.class);
+                String pre = applicationHome.getSource().getParentFile().getParentFile().getAbsolutePath() +
+                        "\\src\\main\\resources\\static\\images\\";
+                String directoryPath = pre + dn;
+                String fullOldImgPath = directoryPath + "\\" + oldInstallImg;
+
+                // 删除旧图片文件
+                File oldImgFile = new File(fullOldImgPath);
+                if (oldImgFile.exists()) {
+                    if (!oldImgFile.delete()) {
+                        throw new RuntimeException("无法删除旧图片: " + fullOldImgPath);
+                    }
+                }
+            }
+        }
+        // 上传新的图片
         MultipartFile uploadInstallImg = cameraInfoDTO.getUploadInstallImg();
         String uploadInstallImgFilename = UploadImgUtil.uploadImg(cameraInfoDTO.getDeviceNumber(), uploadInstallImg);
 
+        // 更新 CameraInfo 信息
         CameraInfo cameraInfo = BeanCopyUtils.copyBean(cameraInfoDTO, CameraInfo.class);
         cameraInfo.setInstallImg(uploadInstallImgFilename);
         LambdaUpdateWrapper<CameraInfo> updateWrapper = new LambdaUpdateWrapper<>();
@@ -76,6 +113,16 @@ public class CameraInfoServiceImpl extends ServiceImpl<CameraInfoMapper, CameraI
     @Override
     public boolean deleteInfoByDeviceNumber(String deviceNumber) {
         return cameraInfoMapper.updateByDeviceNumber(deviceNumber, true);
+    }
+
+    @Override
+    public List<CameraInfo> getInfoListByDeviceNumber(String deviceNumber) {
+        if(StringUtils.isEmpty(deviceNumber)){
+            return cameraInfoMapper.selectList(null);
+        }
+        LambdaQueryWrapper<CameraInfo> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.like(CameraInfo::getDeviceNumber, deviceNumber);
+        return cameraInfoMapper.selectList(queryWrapper);
     }
 }
 

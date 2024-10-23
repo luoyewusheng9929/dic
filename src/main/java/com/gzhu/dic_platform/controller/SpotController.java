@@ -1,6 +1,7 @@
 package com.gzhu.dic_platform.controller;
 
 import com.gzhu.dic_platform.common.utils.Result;
+import com.gzhu.dic_platform.domain.TargetSpot;
 import com.gzhu.dic_platform.dto.TargetSpotDTO;
 import com.gzhu.dic_platform.service.TargetSpotService;
 import com.gzhu.dic_platform.vo.TargetSpotVO;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -55,5 +57,12 @@ public class SpotController {
         } else {
             return Result.error(false, 500, "保存失败");
         }
+    }
+
+    @GetMapping("/all")
+    @Operation( summary = "获得当前项目下的所有设备的所有靶点信息,包括在线靶点，离线靶点----------------2024/10/17")
+    public Result getAllTargetSpot(@RequestParam("project")  String project){
+        HashMap<String, Object> allTargetSpotsByProject = targetSpotService.getAllTargetSpotsByProject(project);
+        return Result.ok().data("data", allTargetSpotsByProject);
     }
 }

@@ -89,6 +89,7 @@ public class TargetSpot implements Serializable {
     /**
      * 逻辑删除
      */
+    @TableLogic
     private Integer isDeleted;
 
     @TableField(exist = false)

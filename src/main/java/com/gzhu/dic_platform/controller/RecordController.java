@@ -14,7 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.Instant;
+import java.time.ZoneId;
 import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -64,19 +66,23 @@ public class RecordController {
     @GetMapping("links/data")
     public Result getData(
             @RequestParam(name = "deviceNumber", required = false) String deviceNumber,
+            @RequestParam(name = "idx", required = false) Integer idx,
             @RequestParam(name = "startTime", required = false) String startTime,
             @RequestParam(name = "endTime", required = false) String endTime,
-//            @RequestParam(name = "samplingDuration", required = false, defaultValue = "100") int samplingDuration,
-//            @RequestParam(name = "samplingMethod", required = false, defaultValue = "mean") String samplingMethod,
+            @RequestParam(name = "samplingDuration", required = false) Integer samplingDuration,
+            @RequestParam(name = "samplingMethod", required = false) String samplingMethod,
             @RequestParam(name = "limit", required = false, defaultValue = "600") int limit) {
 
         List<Map<String, Object>> result = new ArrayList<>();
         StringBuilder queryBuilder = new StringBuilder();
 
+        if(StringUtils.isNotEmpty(startTime) && StringUtils.isNotEmpty(endTime) && startTime.equals(endTime)) {
+            return Result.error(false, 500, "查询时间范围为空！");
+        }
 
         // 计算当前时间的前一天
         Instant now = Instant.now();
-        String defaultStartTime = now.minus(60, ChronoUnit.MINUTES).toString(); // 当前时间的前一天
+        String defaultStartTime = now.minus(180, ChronoUnit.MINUTES).toString(); // 当前时间的前一天
         String defaultEndTime = now.toString(); // 当前时间
 
         // 基础查询语句
@@ -94,9 +100,16 @@ public class RecordController {
             queryBuilder.append(String.format("|> filter(fn: (r) => r.dn == \"%s\") ", deviceNumber));
         }
 
+        // 如果 idx 存在，添加过滤条件
+        if (idx != null) {
+            queryBuilder.append(String.format("|> filter(fn: (r) => r.idx == \"%d\") ", idx));
+        }
+
         // 采样
-//        queryBuilder.append(String.format("|> aggregateWindow(every: %dms, fn: %s)",
-//                samplingDuration, samplingMethod.toLowerCase()));
+        if(samplingDuration != null && StringUtils.isNotEmpty(samplingMethod)) {
+            queryBuilder.append(String.format("|> aggregateWindow(every: %dms, fn: %s, createEmpty: false)",
+                    samplingDuration, samplingMethod.toLowerCase()));
+        }
         // 限制
         queryBuilder.append(String.format("|> limit(n: %d)", limit));
 
@@ -105,19 +118,33 @@ public class RecordController {
 
         for (FluxTable table : tables) {
             for (FluxRecord record : table.getRecords()) {
+                // 获取原始的 UTC 时间戳
+                Object utcTimeObj = record.getValueByKey("_time");
+
+                // 检查是否有时间字段
+                if (utcTimeObj instanceof Instant utcTime) {
+                    // 将 UTC 时间转换为北京时间（UTC+8）
+                    ZonedDateTime beijingTime = utcTime.atZone(ZoneOffset.UTC).withZoneSameInstant(ZoneOffset.ofHours(8));
+//                    // 格式化为你需要的格式，可以保留ZonedDateTime对象或转换为字符串
+                    String formattedTime = beijingTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
+                    // 替换为北京时间
+                    record.getValues().put("_time", formattedTime);
+                }
+
+                // 添加转换后的记录到结果
                 result.add(record.getValues());
             }
         }
 
-        return Result.ok().data("records", result);
+        return Result.ok().data("total", result.size()).data("records", result);
     }
 
     private String formatTime(String dateTime) {
-        return DateTimeFormatter.ISO_INSTANT.format(
-                DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
-                        .withZone(ZoneOffset.UTC)
-                        .parse(dateTime)
-        );
+        // 解析传入的中国北京时间，并转换为UTC时间
+        ZonedDateTime utcTime = ZonedDateTime.parse(dateTime,
+                DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").withZone(ZoneId.of("Asia/Shanghai"))).withZoneSameInstant(ZoneOffset.UTC);
+        // 格式化为 ISO 8601 格式
+        return DateTimeFormatter.ISO_INSTANT.format(utcTime);
     }
 }
 

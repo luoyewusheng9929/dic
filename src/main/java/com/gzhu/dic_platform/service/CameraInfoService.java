@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.gzhu.dic_platform.dto.CameraInfoDTO;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
 * @author 23617
@@ -23,4 +24,6 @@ public interface CameraInfoService extends IService<CameraInfo> {
     boolean updateInfo(CameraInfoDTO cameraInfoDTO);
 
     boolean deleteInfoByDeviceNumber(String deviceNumber);
+
+    List<CameraInfo> getInfoListByDeviceNumber(String deviceNumber);
 }

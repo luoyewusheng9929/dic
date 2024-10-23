@@ -14,6 +14,8 @@ import java.util.List;
 */
 public interface TargetSpotMapper extends BaseMapper<TargetSpot> {
     List<TargetSpotVO> getAllByCamera(String deviceNumber);
+
+    List<TargetSpot> getTargetSpotsList(Integer online);
 }
 
 

@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -82,6 +83,21 @@ public class TargetSpotServiceImpl extends ServiceImpl<TargetSpotMapper, TargetS
             e.printStackTrace();
             return false;
         }
+    }
+
+    @Override
+    public HashMap<String, Object> getAllTargetSpotsByProject(String project) {
+        //先获取所有的靶点信息
+        List<TargetSpot> spotList = targetSpotMapper.getTargetSpotsList(null);
+
+        //获取设备在线的所有靶点信息
+        List<TargetSpot> onlineSpots = targetSpotMapper.getTargetSpotsList(1);
+        HashMap<String, Object> targetInfoMap = new HashMap<>();
+        targetInfoMap.put("spotList", spotList);
+        targetInfoMap.put("total", spotList.size());
+        targetInfoMap.put("onlineSpots", onlineSpots);
+        targetInfoMap.put("onlineNum", onlineSpots.size());
+        return targetInfoMap;
     }
 }
 

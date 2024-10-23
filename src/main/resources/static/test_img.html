@@ -123,11 +123,11 @@
 
                         // 添加文件
                         if (this.fileList.length > 0) {
-                            formData.append('uploadImg', this.fileList[0].raw); // 使用 `raw` 来获取单个文件对象
+                            formData.append('uploadInstallImg', this.fileList[0].raw); // 使用 `raw` 来获取单个文件对象
                         }
 
                         // 发送请求
-                        fetch('http://localhost:8080/api/info/update', {
+                        fetch('http://172.22.121.92:8080/api/info/update', {  //http://172.22.121.92:8080/api/info/update
                             method: 'PUT', // 使用 PUT 方法
                             headers: this.uploadHeaders,
                             body: formData

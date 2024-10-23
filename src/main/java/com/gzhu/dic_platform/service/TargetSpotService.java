@@ -6,6 +6,7 @@ import com.gzhu.dic_platform.dto.TargetSpotDTO;
 import com.gzhu.dic_platform.vo.TargetSpotVO;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -22,4 +23,6 @@ public interface TargetSpotService extends IService<TargetSpot> {
     ArrayList<TargetSpotVO> getTargetSpotByCameraId(String deviceNumber);
 
     boolean updateSpots(List<TargetSpotDTO> spots);
+
+    HashMap<String, Object> getAllTargetSpotsByProject(String project);
 }

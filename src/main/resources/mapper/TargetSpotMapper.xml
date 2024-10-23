@@ -33,4 +33,14 @@
         from target_spot
         where camera = #{deviceNumber}
     </select>
+    <select id="getTargetSpotsList" resultType="com.gzhu.dic_platform.domain.TargetSpot">
+        select ts.id,ts.spot_name,ts.x_coordinate,ts.y_coordinate,ts.distance,ts.width,ts.height,ts.is_basepoint
+        from target_spot as ts
+        join camera_info as ci
+        on ts.camera = ci.device_number
+        where ts.is_deleted=0 and ci.is_deleted=0
+        <if test="online != null">
+            and ci.online = #{online}
+        </if>
+    </select>
 </mapper>

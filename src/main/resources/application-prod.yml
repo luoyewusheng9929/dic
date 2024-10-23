@@ -2,12 +2,10 @@ dic:
   mysqldb:
     host: mysql
     password: 123456
-#  influxdb:
-#    host: influxdb2
-#    port: 8086
-#    token: RLggLBq4v0kyBtnWQ3qeVqBkRuwjhVK-x2hmP5RiQl1baNr0QeZTQZkEIEbzfrlrnB91zFasxPlhm749mHwO4g==
   influxdb:
-    host: 172.22.234.69
+    host: influxdb2
     port: 8086
-    token: Q4jctammwpT_EktKMqoHK3Bspm5Ujk4Ny73mJPT6vfcpi8Hiv7PmNx1IcZfAkZ2MtxC7I_J4EC_MpYZ3H5pr2w==
-    org: gzhu
+    token: UOfm9V_mz_u2qgSt0e-_BWEmcjBd9qno1TjOkwLiCNbxJExPgF7UBCqG9kIhzk0H99RjMJFvwjzNreK9F5IbUQ==
+  mqtt:
+    host: 1.14.135.194
+    port: 1883

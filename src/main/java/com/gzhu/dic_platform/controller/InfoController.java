@@ -18,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -86,6 +87,13 @@ public class InfoController {
         boolean flag = cameraInfoService.deleteInfoByDeviceNumber(deviceNumber);
         if (flag) return Result.ok(true, 200, "移除成功");
         else throw new GlobalException("移除失败");
+    }
+
+    @GetMapping("/list")
+    @Operation(summary = "根据设备编号模糊查询设备信息-----------------2024/10/17")
+    public Result getInfoListById(@RequestParam(name = "deviceNumber", required = false) String deviceNumber) {
+        List<CameraInfo> result = cameraInfoService.getInfoListByDeviceNumber(deviceNumber);
+        return Result.ok().data("data", result);
     }
 }
 

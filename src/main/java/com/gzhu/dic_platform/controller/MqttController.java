@@ -19,7 +19,7 @@ import java.util.Map;
 @Tag(name = "mqtt消息控制页面")
 public class MqttController {
 
-    private static final String broker = "tcp://172.22.121.92:1883";
+    private static final String broker = "tcp://1.14.135.194:1883";
     private static final String topic_prefix = "dic/device/control/";
     private static final String username = "emqx";
     private static final String password = "public";
