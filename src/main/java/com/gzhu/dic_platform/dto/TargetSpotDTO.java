@@ -1,5 +1,6 @@
 package com.gzhu.dic_platform.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
@@ -22,11 +23,13 @@ public class TargetSpotDTO {
     /**
      * x坐标
      */
+    @JsonProperty("xCoordinate")
     private Integer xCoordinate;
 
     /**
      * y坐标
      */
+    @JsonProperty("yCoordinate")
     private Integer yCoordinate;
 
     /**
@@ -47,7 +50,7 @@ public class TargetSpotDTO {
     /**
      * 是否为基准点
      */
-    private Integer isBasepoint;
+    private Boolean isBasepoint;
 
     /**
      * 所属相机

@@ -62,7 +62,7 @@ public class TargetSpot implements Serializable {
     /**
      * 是否为基准点
      */
-    private Integer isBasepoint;
+    private Boolean isBasepoint;
 
     /**
      * 所属相机

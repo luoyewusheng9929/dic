@@ -56,7 +56,7 @@ public class TargetSpotServiceImpl extends ServiceImpl<TargetSpotMapper, TargetS
 
             // 获取数据库中对应相机编号的所有的靶点
             LambdaQueryWrapper<TargetSpot> queryWrapper = new LambdaQueryWrapper<>();
-            queryWrapper.eq(TargetSpot::getCamera, spots.get(0).getCamera());
+            queryWrapper.eq(TargetSpot::getCamera, spots.getFirst().getCamera());
             List<TargetSpot> existingSpots = targetSpotMapper.selectList(queryWrapper);
 
             // 找出需要删除的靶点
@@ -66,8 +66,7 @@ public class TargetSpotServiceImpl extends ServiceImpl<TargetSpotMapper, TargetS
 
             // 标记删除的靶点
             for (TargetSpot spotToDelete : spotsToDelete) {
-                spotToDelete.setIsDeleted(1);
-                targetSpotMapper.updateById(spotToDelete);
+                targetSpotMapper.deleteById(spotToDelete);
             }
 
             // 更新或插入靶点

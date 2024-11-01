@@ -1,17 +1,49 @@
 dic:
   mysqldb:
-    host: 172.22.234.90
+    host: 172.22.234.70
     password: 123456
 #  influxdb:
-#    host: 172.22.234.90
+#    host: 172.22.234.70
 #    port: 8086
 #    token: RLggLBq4v0kyBtnWQ3qeVqBkRuwjhVK-x2hmP5RiQl1baNr0QeZTQZkEIEbzfrlrnB91zFasxPlhm749mHwO4g==
 #    org: Gzhu
   influxdb:
-    host: 172.22.234.69
+    host: 172.22.234.40
     port: 8086
     token: Q4jctammwpT_EktKMqoHK3Bspm5Ujk4Ny73mJPT6vfcpi8Hiv7PmNx1IcZfAkZ2MtxC7I_J4EC_MpYZ3H5pr2w==
     org: gzhu
+#  mqtt:
+#    host: 172.22.234.70
+#    port: 1883
+
+
+#  mysqldb:
+#    host: 1.14.135.194
+#    password: 123456
+#  influxdb:
+#    host: 1.14.135.194
+#    port: 8086
+#    token: UOfm9V_mz_u2qgSt0e-_BWEmcjBd9qno1TjOkwLiCNbxJExPgF7UBCqG9kIhzk0H99RjMJFvwjzNreK9F5IbUQ==
+#    org: gzhu
   mqtt:
-    host: 172.22.234.90
-    port: 1883
+    brokerUrl: tcp://172.22.234.70:1883
+    clientId: mqttx_cloudPlatform
+    username: emqx
+    password: public
+    qos: 2
+    connectionTimeout: 60
+    keepAliveInterval: 60
+    topicsSubscribed:
+      - dic/pit/disp
+      - dic/pit/lastImg
+      - dic/pit/sensor/temperature
+      - dic/pit/sensor/posture
+      - dic/pit/sensor/gps
+    topicsPublished:
+      - dic/device/control/start
+      - dic/device/control/stop
+      - dic/device/control/reboot
+      - dic/device/control/configSync
+      - dic/device/control/deviceParams
+      - dic/device/control/RoiAndBaseImg
+      - dic/device/control/lastImg

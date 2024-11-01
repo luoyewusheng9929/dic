@@ -1,6 +1,7 @@
 package com.gzhu.dic_platform.controller.test;
 
 import com.gzhu.dic_platform.common.exception.GlobalException;
+import com.gzhu.dic_platform.common.utils.QiniuUploadUtil;
 import com.gzhu.dic_platform.common.utils.Result;
 import com.gzhu.dic_platform.common.utils.UploadImgUtil;
 import com.gzhu.dic_platform.service.CameraInfoService;
@@ -91,5 +92,11 @@ public class TestController {
         }
 
         return Result.ok().data("img", path);
+    }
+
+    @PostMapping("/testQiNiuUpload")
+    public String uploadFile(@RequestParam("file") MultipartFile file, @RequestParam("dn") String deviceNumber) {
+        String fileUrl = QiniuUploadUtil.uploadImg(deviceNumber, file);
+        return "文件上传成功，URL：" + fileUrl;
     }
 }

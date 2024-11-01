@@ -110,6 +110,10 @@ public class RecordController {
             queryBuilder.append(String.format("|> aggregateWindow(every: %dms, fn: %s, createEmpty: false)",
                     samplingDuration, samplingMethod.toLowerCase()));
         }
+
+        // 时间倒序排序，确保最新的数据排在前面
+        queryBuilder.append("|> sort(columns: [\"_time\"], desc: true) ");
+
         // 限制
         queryBuilder.append(String.format("|> limit(n: %d)", limit));
 

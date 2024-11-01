@@ -19,7 +19,7 @@ public class WebConfig implements WebMvcConfigurer {
       // 设置允许跨域的路径
         registry.addMapping("/**")
                 // 设置允许跨域请求的域名
-                .allowedOrigins("http://localhost", "http://localhost:8080", "http://localhost:8081", "http://172.22.111.58:8080", "http://172.29.138.225:8080")
+                .allowedOrigins("http://localhost", "http://localhost:8080", "http://localhost:8081", "http://172.22.234.38:8080", "http://172.22.234.38:8081")
                 // 是否允许cookie
                 .allowCredentials(true)
                 // 设置允许的请求方式

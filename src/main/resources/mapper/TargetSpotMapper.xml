@@ -13,7 +13,7 @@
             <result property="distance" column="distance" jdbcType="DOUBLE"/>
             <result property="width" column="width" jdbcType="INTEGER"/>
             <result property="height" column="height" jdbcType="INTEGER"/>
-            <result property="isBasepoint" column="is_basepoint" jdbcType="TINYINT"/>
+            <result property="isBasepoint" column="is_basepoint" jdbcType="BOOLEAN"/>
             <result property="camera" column="camera" jdbcType="VARCHAR"/>
             <result property="project" column="project" jdbcType="VARCHAR"/>
             <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
@@ -29,9 +29,15 @@
         update_time,is_deleted
     </sql>
     <select id="getAllByCamera" resultType="com.gzhu.dic_platform.vo.TargetSpotVO">
-        select id,spot_number,spot_name,x_coordinate,y_coordinate,distance,width,height,is_basepoint
+        select id,
+               spot_number as spotNumber,
+               spot_name as spotName,
+               x_coordinate as xCoordinate,
+               y_coordinate as yCoordinate,
+               distance,
+               width,height,is_basepoint
         from target_spot
-        where camera = #{deviceNumber}
+        where camera = #{deviceNumber} and is_deleted = 0
     </select>
     <select id="getTargetSpotsList" resultType="com.gzhu.dic_platform.domain.TargetSpot">
         select ts.id,ts.spot_name,ts.x_coordinate,ts.y_coordinate,ts.distance,ts.width,ts.height,ts.is_basepoint

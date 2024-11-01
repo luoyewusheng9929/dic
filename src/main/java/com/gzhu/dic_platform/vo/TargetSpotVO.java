@@ -1,5 +1,8 @@
 package com.gzhu.dic_platform.vo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
 
 @Data
@@ -7,6 +10,7 @@ public class TargetSpotVO {
     /**
      * 主键id
      */
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long id;
     /**
      * 靶点序号
@@ -21,11 +25,13 @@ public class TargetSpotVO {
     /**
      * x坐标
      */
+    @JsonProperty("xCoordinate")
     private Integer xCoordinate;
 
     /**
      * y坐标
      */
+    @JsonProperty("yCoordinate")
     private Integer yCoordinate;
 
     /**
@@ -46,5 +52,5 @@ public class TargetSpotVO {
     /**
      * 是否为基准点
      */
-    private Integer isBasepoint;
+    private Boolean isBasepoint;
 }

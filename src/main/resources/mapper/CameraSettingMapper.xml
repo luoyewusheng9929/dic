@@ -10,7 +10,7 @@
             <result property="rollAngle" column="roll_angle" jdbcType="INTEGER"/>
             <result property="horizontalAngle" column="horizontal_angle" jdbcType="INTEGER"/>
             <result property="pitchAngle" column="pitch_angle" jdbcType="INTEGER"/>
-            <result property="temperature" column="temperature" jdbcType="INTEGER"/>
+            <result property="temperature" column="temperature" jdbcType="DOUBLE"/>
             <result property="exposureTime" column="exposure_time" jdbcType="INTEGER"/>
             <result property="frameRate" column="frame_rate" jdbcType="INTEGER"/>
             <result property="upperLimit" column="upper_limit" jdbcType="INTEGER"/>

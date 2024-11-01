@@ -17,7 +17,7 @@ spring:
 
   # 配置环境（dev 开发环境、prod 生产环境）
   profiles:
-    active: prod
+    active: dev
 
   devtools:
     restart:
@@ -48,3 +48,11 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: true
+
+qiniu:
+  access-key: "a7FPRfhfmwYySjhiLRTT8DQMJk3xEXQV4MdgIIaA"
+  secret-key: "Yd5uxdQ0LifLEisyNOc7FVnmdXP3VcUNBOSDKn8q"
+  bucket: "gzhu"
+  domain: "sm64zwqls.hn-bkt.clouddn.com"
+

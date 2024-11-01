@@ -6,6 +6,7 @@ import org.springframework.boot.system.ApplicationHome;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.UUID;
 
@@ -41,6 +42,36 @@ public class UploadImgUtil {
         // 保存文件
         try {
             file.transferTo(new File(fullPath));
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException("文件上传失败", e);
+        }
+
+        return fileName;
+    }
+
+    // 重载的 uploadImg 方法，接受 byte[] 参数
+    public static String uploadImg(String deviceNumber, byte[] imageBytes) {
+        if (imageBytes == null || imageBytes.length == 0) {
+            throw new GlobalException("检测为空文件，请重新上传！");
+        }
+        String fileName = UUID.randomUUID().toString().replace("-", "") + ".png";
+
+        ApplicationHome applicationHome = new ApplicationHome(UploadImgUtil.class);
+        String pre = applicationHome.getSource().getParentFile().getParentFile().getAbsolutePath() +
+                "\\src\\main\\resources\\static\\images\\";
+        String directoryPath = pre + deviceNumber;
+        String fullPath = directoryPath + "\\" + fileName;
+
+        File directory = new File(directoryPath);
+        if (!directory.exists()) {
+            if (!directory.mkdirs()) {
+                throw new RuntimeException("无法创建目录: " + directoryPath);
+            }
+        }
+
+        try (FileOutputStream outputStream = new FileOutputStream(new File(fullPath))) {
+            outputStream.write(imageBytes);
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException("文件上传失败", e);

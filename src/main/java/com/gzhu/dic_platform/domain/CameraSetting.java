@@ -47,7 +47,7 @@ public class CameraSetting implements Serializable {
     /**
      * 运行温度
      */
-    private Integer temperature;
+    private Double temperature;
 
     /**
      * 曝光时间
